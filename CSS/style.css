@@ -1,0 +1,173 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Basic body styling */
+body {
+    background: #fff;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #e23744;
+    /* Zomato red */
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffc1c1;
+    /* lighter red on hover */
+}
+
+/* Main Section */
+main {
+    position: relative;
+}
+
+/* Video background */
+.bg-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content over video */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    /* slight dark overlay for readability */
+    padding: 20px;
+}
+
+.main-logo {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content input {
+    width: 50%;
+    max-width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+    transition: 0.3s;
+}
+
+.content input:focus {
+    border: 2px solid #ff6f61;
+    box-shadow: 0px 0px 15px rgba(255, 111, 97, 0.8);
+}
+
+/* About food delivery section */
+.about-delivery {
+    padding: 80px 50px;
+    background:white;
+    text-align: center;
+}
+
+.about-delivery h2 {
+    font-size: 2.5em;
+    color: #e23744;
+    margin-bottom: 20px;
+}
+
+.about-delivery p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+/* Cards section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #e23744;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #e23744;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: white;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #e23744;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
